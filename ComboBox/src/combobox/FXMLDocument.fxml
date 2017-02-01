@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="combobox.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="260.0" fitWidth="345.0" layoutX="103.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Reggae_by_lannor.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="214.0" layoutY="250.0" mnemonicParsing="false" onAction="#btnText_click" prefHeight="44.0" prefWidth="103.0" text="Text" />
+      <ComboBox fx:id="cmbComidas" layoutX="158.0" layoutY="140.0" prefHeight="25.0" prefWidth="216.0">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Pizza" />
+                  <String fx:value="Hamburguesa" />
+                  <String fx:value="Hotdog" />
+                  <String fx:value="Carne Asada" />
+              </FXCollections>
+          </items>
+      </ComboBox>
+   </children>
+</AnchorPane>
